@@ -1,1 +1,18 @@
-ewoiZXh0ZW5kcyI6ICIuL3RzY29uZmlnLmpzb24iLAoiY29tcGlsZXJPcHRpb25zIjogewogICJqc3giOiAicmVhY3QtanN4IiwKICAiZXNNb2R1bGVJbnRlcm9wIjogdHJ1ZSwKICAibW9kdWxlIjogImNvbW1vbmpzIiwKICAidHlwZXMiOiBbImplc3QiLCAiQHRlc3RpbmctbGlicmFyeS9qZXN0LWRvbSJdLAogICJpc29sYXRlZE1vZHVsZXMiOiBmYWxzZQp9LAoiaW5jbHVkZSI6IFsKICAic3JjLyoqLyoudHMiLAogICJzcmMvKiovKi50c3giLAogICIqKi8qLnRlc3QudHMiLAogICIqKi8qLnRlc3QudHN4IiwKICAiamVzdC5zZXR1cC50cyIKXSwKImV4Y2x1ZGUiOiBbIm5vZGVfbW9kdWxlcyJdCn0=
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "types": ["jest", "@testing-library/jest-dom"],
+    "isolatedModules": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "jest.setup.ts"
+  ],
+  "exclude": ["node_modules"]
+}
